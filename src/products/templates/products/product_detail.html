@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 {% block mycontent %}
 <h1>In App template: Item</h1>
-<h1> {% if object.title %}{{object.title}}{% else %}There was no title set for this item{% endif %}</h1>
+<h1> {% if object.title %}
+    {{object.title}}
+    {% else %}There was no title set for this item
+    {% endif %}</h1>
+<p>{{ object.description }}</p>
 {% endblock %}
